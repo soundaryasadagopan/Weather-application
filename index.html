@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content = "width=device-width , initial-scale=1.0">
+        <title>Weather app</title>
+        <link rel ="stylesheet" href ="style.css">
+    </head>
+    <body>
+        <div id ="outer-box">
+            <div id ="center-box"> 
+                <h1 id ="heading">Weather</h1><br>
+                <h3 id ="date"></h3>
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth()+1;
+                    day = date.getDate();
+                    if(month < 10){
+                        month = "0" + month;
+                    }if(day < 10){
+                        day = "0"+ day;
+                    }
+                    document.getElementById("date").innerHTML = day+"/"+month +"/"+year;
+                </script>
+                
+                <br>
+                <br>
+                <h3 id ="pid">Location:--------</h3><br>
+                <p id ="p2id"></p><br/>
+                <p id ="p1id">Temp:<span id="temp"></span> &#176 C</p>
+                
+                <p id="wind">Wind speed:<span id="windspeed"></span></p>
+            
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

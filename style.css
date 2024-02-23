@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    
+}
+#outer-box{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:beige
+}
+#center-box{
+    height:400px;
+    width:400px;
+    background-color:rgb(20, 174, 208);
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+}
+input[type="button"]{
+    border-radius:5px;
+    background-color:bisque;
+    color:black;
+}
